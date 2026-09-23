@@ -1,10 +1,15 @@
 import React from "react";
 
 export default class InputEmail extends React.Component {
-
+    state = {
+        email: ""
+    }
 
     handleEmailEdit = (e) => {
-
+        console.log("handleEmailEdit e", e)
+        const chr = e.nativeEvent?.data
+        const email = e.target?.value 
+        this.setState({email: chr})
     }
 
     render() {

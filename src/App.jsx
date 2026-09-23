@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import LoginForm from './components/LoginForm'
+import LoginForm from './LoginForm'
 
 export default class App extends React.Component {
   render() {
@@ -14,7 +14,7 @@ export default class App extends React.Component {
               Sign in to continue your learning journey.
             </p>
           </div>
-          <LoginForm />
+          <LoginForm></LoginForm>
         </section>
       </main>
     )
